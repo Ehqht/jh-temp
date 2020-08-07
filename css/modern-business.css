@@ -1,0 +1,147 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/templates/modern-business)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+ @font-face { font-family: 'NanumBarunGothic';
+  src: url('/fonts/NanumBarunGothic.eot');
+  src: url('/fonts/NanumBarunGothic.eot') format('embedded-opentype'),
+  url('/fonts/NanumBarunGothic.woff') format('woff');}
+  
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+/* 웹사이트의 위 - 아래 순서? 
+tag > id > class 순서 */
+
+/* general font */
+.w4{ font-weight: 400;}
+.w7{ font-weight: 700;}
+.color-B{color: #00498c;}
+
+body {
+  padding-top:0;
+  font-family:  'NanumBarunGothic', sans-serif;
+}
+
+/* 하이퍼링크 색깔/밑줄 */
+a { color: #727272; text-decoration: none;}
+a:active {color:black; text-decoration: none;}
+a:hover {color:black; text-decoration: none;}
+
+p, h2, h3{line-height: 2em}
+
+
+/* 각 메뉴의 top-img */
+#top-img{
+  height:300px;
+  margin-bottom: 10px;
+}
+
+.wrap {
+  margin:0;
+}
+
+.content{
+  margin-top: 20px;
+}
+
+#sub-menu{
+  font-weight:700;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+.dropdown-item{
+  font-weight: 400;
+}
+
+nav{font-family: 'Noto Sans KR', sans-serif;}
+
+.nav-item{
+  font-weight: 700;
+}
+
+footer{
+  color:#727272;
+  font-size: 13px;
+}
+
+footer li{
+  display:inline;
+  color: white;
+  padding:10px;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer span{
+  color:#727272;
+  padding:5px
+}
+
+.breadcrumb {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/*
+.breadcrumb-item::before {
+  display: inline-block;
+  padding-right: .5rem;
+  color: #6c757d;
+  content: "||";
+}*/
+
+.breadcrumb-item+.breadcrumb-item::before {
+  display: inline-block;
+  padding-right: .5rem;
+  color: #6c757d;
+  content: ">";
+}
+
+.certi{ border: 1px solid grey; padding:4px}
+
+.img-fluid{ border: 0.3px solid #dedee4;}
+/*.certi .w7 { font-size:13px; border-top: 1px solid grey; padding:0; background-color: #f2f2f2;} */
+.certi-name { font-size:13px; font-weight:700; text-align: center; padding-top:0.5em; padding-bottom:0.5em}
+
+#history-table{ 
+  width:100%;
+  height:auto;
+}
+
+table{
+  width:100%;
+}
+
+td{
+  text-align: left;
+  padding-left: 10px;
+}
+.year{
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+
+.tb-top{
+  border-bottom:3px solid #00498c;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  margin-bottom:20px;
+  font-weight: 700;
+  font-size: 20px;
+}
