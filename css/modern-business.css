@@ -31,11 +31,33 @@ a:hover {color:black; text-decoration: none;}
 
 p, h2, h3{line-height: 2em}
 
+/* side bar 옆 content */
+.main-content{
+  width:100%;
+  padding-top:30px;
+  padding-bottom:30px;
+  padding-right:15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left:auto;
+  max-width: 1400px;
+}
 
 /* 각 메뉴의 top-img */
-#top-img{
-  height:300px;
-  margin-bottom: 10px;
+.top-area{
+  position:relative; 
+  background: no-repeat center center scroll;
+  height:33vh;
+  min-height: 300px;
+  background-size:cover;
+}
+.top-text{
+  text-align: right;
+  color:white;
+  height:33vh;
+  padding-top: 15vh;
+  margin:auto;
+  padding-right: 390px;
 }
 
 .wrap {
@@ -48,6 +70,7 @@ p, h2, h3{line-height: 2em}
 
 #sub-menu{
   font-weight:700;
+  text-align: center;
 }
 
 .carousel-item {
@@ -73,25 +96,11 @@ nav{font-family: 'Noto Sans KR', sans-serif;}
   font-weight: 700;
 }
 
-footer{
-  color:#727272;
-  font-size: 13px;
-}
-
-footer li{
-  display:inline;
-  color: white;
-  padding:10px;
-}
-
-footer ul{
-  list-style: none;
-}
-
-footer span{
-  color:#727272;
-  padding:5px
-}
+/* Footer */
+footer{  color:#727272;  font-size: 13px;}
+footer li{  display:inline; color: white;  padding:10px;}
+footer ul{ list-style: none;}
+footer span{color:#727272; padding:5px}
 
 .breadcrumb {
   background-color: transparent;
@@ -119,29 +128,42 @@ footer span{
 /*.certi .w7 { font-size:13px; border-top: 1px solid grey; padding:0; background-color: #f2f2f2;} */
 .certi-name { font-size:13px; font-weight:700; text-align: center; padding-top:0.5em; padding-bottom:0.5em}
 
-#history-table{ 
-  width:100%;
-  height:auto;
-}
-
-table{
-  width:100%;
-}
-
-td{
-  text-align: left;
-  padding-left: 10px;
-}
-.year{
-  border-bottom: 1px solid grey;
-  padding-bottom: 10px;
-}
-
-.tb-top{
+/* history */
+#history{ font-family: 'Noto Sans KR', sans-serif;}
+.his-top{
   border-bottom:3px solid #00498c;
   padding-left: 15px;
-  padding-bottom: 10px;
-  margin-bottom:20px;
+  padding-bottom: 15px;
   font-weight: 700;
   font-size: 20px;
 }
+.history-list{display:flex; margin-bottom: 0.5em; padding:15px;
+  border-bottom: 0.5px solid #dedee4;}
+.history-year{padding: 15px; text-align: center; font-size: 35px;}
+.history-events{position: relative;}
+.history-events{margin:auto; padding:5px; font-size: 16px;}
+.history-month{margin-left:2em; text-align: center;}
+.history-content{margin-left:4em;}
+
+/* Side bar */
+.side-menu{
+  display:inline-block;
+  border-bottom: 3px groove grey;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding:25px;
+  background-color: #dedee4 ;
+  width:inherit;
+}
+.list-group-item{ padding-left:30px;}
+
+/* Work-list-tb */
+.work-tb  {border-collapse:collapse;border-spacing:0;}
+.work-tb td{border-color:grey;border-style:solid;border-width:1px;font-size:13px;
+  overflow:hidden;padding:10px 8px;word-break:normal; text-align:center;vertical-align:middle}
+.work-tb th{ background-color: #00498c; color:white; text-align:center;vertical-align:middle;
+  border-color:grey;border-style:solid;border-width:1px;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 8px;word-break:normal;}
+.work-tb .work-tb-cm{text-align:center;vertical-align:middle}
+.work-tb .work-tb-lm{text-align:left;vertical-align:middle}

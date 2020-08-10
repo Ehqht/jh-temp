@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
 
@@ -65,98 +65,95 @@
       </div>
     </div>
   </nav>
-  
+
   <!-- Wrap -->
   <div class="wrap">
     <!-- top img -->
     <div class="top-area mb-4" style="background-image: url(img/1company-img.jpg);">
-      <h1 class="top-text">고객센터</h1>
+      <h1 class="top-text">회사소개</h1>
     </div>
   
     <div class="row main-content">
       <!-- Sidebar Column -->
       <div class="col-lg-2 mb-4">
-        <a href="greet.html" class="side-menu text-center">고객센터</a>
+        <a href="greet.html" class="side-menu text-center">회사소개</a>
         <div class="list-group">
-          <a href="greet.html" class="list-group-item">상담문의</a>
-
+          <a href="greet.html" class="list-group-item">인사말</a>
+          <a href="history.html" class="list-group-item">회사연혁</a>
+          <a href="certi.html" class="list-group-item">인증현황</a>
+          <a href="location.html" class="list-group-item">찾아오시는 길</a>
         </div>
       </div>
       <!-- Page Content -->
       <div class="container">
   
         <!-- Page Heading/Breadcrumbs -->
-        <h1 id="sub-menu">상담문의</h1>
+        <h1 id="sub-menu">찾아오시는 길</h1>
   
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
             <a href="index.html">Home</a>
           </li>
-          <li class="breadcrumb-item"><a href="contact.html">고객센터</a></li>
-          <li class="breadcrumb-item"><a href="contact.html">상담문의</a></li>
+          <li class="breadcrumb-item"><a href="greet.html">회사소개</a></li>
+          <li class="breadcrumb-item"><a href="location.html">찾아오시는 길</a></li>
         </ol>
   
-        <!-- Contact Form -->
-        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+        <!-- Content Row -->
         <div class="row">
+          <!-- Map Column -->
           <div class="col-lg-8 mb-4">
-            <h3>문의사항</h3>
-            <form name="sentMessage" id="contactForm" novalidate>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label>제목:</label>
-                  <input type="text" class="form-control" id="title" required
-                    data-validation-required-message="제목을 입력해 주세요.">
-                  <p class="help-block"></p>
-                </div>
-              </div>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label>작성자:</label>
-                  <input type="tel" class="form-control" id="name" required
-                    data-validation-required-message="작성자를 입력해 주세요.">
-                </div>
-              </div>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label>이메일 주소:</label>
-                  <input type="email" class="form-control" id="email" required
-                    data-validation-required-message="이메일 주소를 입력해 주세요.">
-                </div>
-              </div>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label>내용:</label>
-                  <textarea rows="10" cols="100" class="form-control" id="message" required
-                    data-validation-required-message="내용을 입력해주세요." maxlength="999"
-                    style="resize:none"></textarea>
-                </div>
-              </div>
-              <div id="success"></div>
-              <!-- For success/fail messages -->
-              <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
-            </form>
+            <!-- Embedded Google Map -->
+            <iframe style="width: 100%; height: 400px; border: 0;"
+              src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
           </div>
-  
+          <!-- Contact Details Column -->
+          <div class="col-lg-4 mb-4">
+            <h3>상세정보</h3>
+            <p>
+              경기도 화성시 병점동로 
+              <br>164번길 39, 201호
+              <br>
+            </p>
+            <p>
+              <span class="w7">TEL</span> : 031-257-7676
+            </p>
+            <p>
+              <span class="w7">FAX</span> : 031-257-7686
+            </p>
+            <p>
+              <span class="w7">E-mail</span> :
+              <a href="mailto:juheong-1@hanmail.net"> juheong-1@hanmail.net
+              </a>
+            </p>
+          </div>
         </div>
         <!-- /.row -->
       </div>
-      <!-- /.row -->
+      <!-- /.container -->
     </div>
   </div>
 
-
+ <!-- Footer -->
+ <footer class="py-4 bg-dark">
+  <div class="container">
+    <div class="m-0 text-center text-white">
+      <ul>
+        <li><span>TEL</span> 031-257-7676 </li>
+        <li><span>FAX</span> 031-257-7686 </li>
+        <li style="margin-right:0"><span>E-mail</span> juheong-1@hanmail.net </li>
+      </ul>
+    </div>
+    <div class="m-0 text-center">
+      <p> 사업자번호: 135-81-29393 상호명 : 주식회사 주흥환경  대표자 : 이길재
+        <br>
+        주 소 : 경기도 화성시 병점동로 164번길 39, 201호
+      </p>
+      <p class="m-0 text-center">Copyright &copy; (주)주흥환경 All rights reserved.</p>
+    </div>
   </div>
   <!-- /.container -->
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
+</footer>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

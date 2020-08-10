@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
 
@@ -70,101 +70,109 @@
   <div class="wrap">
     <!-- top img -->
     <div class="top-area mb-4" style="background-image: url(img/1company-img.jpg);">
-      <h1 class="top-text">고객센터</h1>
+      <h1 class="top-text">사업실적</h1>
     </div>
-  
     <div class="row main-content">
       <!-- Sidebar Column -->
       <div class="col-lg-2 mb-4">
-        <a href="greet.html" class="side-menu text-center">고객센터</a>
+        <a href="work1.html" class="side-menu text-center">사업실적</a>
         <div class="list-group">
-          <a href="greet.html" class="list-group-item">상담문의</a>
-
+          <a href="work1.html" class="list-group-item">수처리공사</a>
+          <a href="work2.html" class="list-group-item">위탁운영관리</a>
+          <a href="work3.html" class="list-group-item">수질모니터링</a>
+          <a href="work4.html" class="list-group-item">시운전</a>
+          <a href="work5.html" class="list-group-item">기술개발</a>
         </div>
       </div>
+  
       <!-- Page Content -->
       <div class="container">
   
         <!-- Page Heading/Breadcrumbs -->
-        <h1 id="sub-menu">상담문의</h1>
+        <h1 class="mt-4 mb-3">수처리공사
+          <small>Subheading</small>
+        </h1>
   
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
             <a href="index.html">Home</a>
           </li>
-          <li class="breadcrumb-item"><a href="contact.html">고객센터</a></li>
-          <li class="breadcrumb-item"><a href="contact.html">상담문의</a></li>
+          <li class="breadcrumb-item"><a href="work1.html">사업실적</a></li>
+          <li class="breadcrumb-item"><a href="work1.html">수처리공사</a></li>
         </ol>
-  
-        <!-- Contact Form -->
-        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-        <div class="row">
-          <div class="col-lg-8 mb-4">
-            <h3>문의사항</h3>
-            <form name="sentMessage" id="contactForm" novalidate>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label>제목:</label>
-                  <input type="text" class="form-control" id="title" required
-                    data-validation-required-message="제목을 입력해 주세요.">
-                  <p class="help-block"></p>
-                </div>
-              </div>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label>작성자:</label>
-                  <input type="tel" class="form-control" id="name" required
-                    data-validation-required-message="작성자를 입력해 주세요.">
-                </div>
-              </div>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label>이메일 주소:</label>
-                  <input type="email" class="form-control" id="email" required
-                    data-validation-required-message="이메일 주소를 입력해 주세요.">
-                </div>
-              </div>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label>내용:</label>
-                  <textarea rows="10" cols="100" class="form-control" id="message" required
-                    data-validation-required-message="내용을 입력해주세요." maxlength="999"
-                    style="resize:none"></textarea>
-                </div>
-              </div>
-              <div id="success"></div>
-              <!-- For success/fail messages -->
-              <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
-            </form>
-          </div>
-  
+        
+        <div class="work-list">
+          <table class="work-tb">
+            <thead>
+              <tr>
+                <th class="work-tb-cm">연도</th>
+                <th class="work-tb-cm">공사명</th>
+                <th class="work-tb-cm">공법</th>
+                <th class="work-tb-cm">처리용량 (㎥/d)</th>
+                <th class="work-tb-cm">발주자</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="work-tb-cm" rowspan="4">2020년</td>
+                <td class="work-tb-lm">남해 수제맥주 폐수처리시설 개선공사</td>
+                <td class="work-tb-cm">MBDR을 이용한 활성슬러지공법</td>
+                <td class="work-tb-cm">9</td>
+                <td class="work-tb-cm">㈜완벽한인생</td>
+              </tr>
+              <tr>
+                <td class="work-tb-lm">홍대CGV복합몰 신축사업 공사중 정화조설치공사</td>
+                <td class="work-tb-cm">부패탱크방식</td>
+                <td class="work-tb-cm">1400인조 300인조</td>
+                <td class="work-tb-cm">활림건설㈜</td>
+              </tr>
+              <tr>
+                <td class="work-tb-lm">다올팜㈜ 축산폐수처리시설 기계설비공사</td>
+                <td class="work-tb-cm">물리화학적처리+MBDR을 이용한 탈질소&nbsp;&nbsp;활성슬러지공법</td>
+                <td class="work-tb-cm">40</td>
+                <td class="work-tb-cm">㈜삼건환경건설</td>
+              </tr>
+              <tr>
+                <td class="work-tb-lm">금산군 가축분뇨 공공처리시설 설치 사업중 기계공사</td>
+                <td class="work-tb-cm">중온 혐기성소화</td>
+                <td class="work-tb-cm">90</td>
+                <td class="work-tb-cm">환경시설관리 주식회사 외2</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <!-- /.row -->
+  
       </div>
-      <!-- /.row -->
+      <!-- /.container -->
     </div>
   </div>
-
-
-  </div>
-  <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-4 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+      <div class="m-0 text-center text-white">
+        <ul>
+          <li><span>TEL</span> 031-257-7676 </li>
+          <li><span>FAX</span> 031-257-7686 </li>
+          <li style="margin-right:0"><span>E-mail</span> juheong-1@hanmail.net </li>
+        </ul>
+      </div>
+      <div class="m-0 text-center">
+        <p> 사업자번호: 135-81-29393 상호명 : 주식회사 주흥환경  대표자 : 이길재
+          <br>
+          주 소 : 경기도 화성시 병점동로 164번길 39, 201호
+        </p>
+        <p class="m-0 text-center">Copyright &copy; (주)주흥환경 All rights reserved.</p>
+      </div>
     </div>
     <!-- /.container -->
+  
   </footer>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
 
 </body>
 
