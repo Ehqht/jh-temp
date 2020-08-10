@@ -5,9 +5,8 @@
  */
 
  @font-face { font-family: 'NanumBarunGothic';
-  src: url('/fonts/NanumBarunGothic.eot');
-  src: url('/fonts/NanumBarunGothic.eot') format('embedded-opentype'),
-  url('/fonts/NanumBarunGothic.woff') format('woff');}
+  src: url('/font/NanumBarunGothic.eot');
+  src: url('/font/NanumBarunGothic.eot') format('embedded-opentype'), url('/font/NanumBarunGothic.woff') format('woff');}
   
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 
