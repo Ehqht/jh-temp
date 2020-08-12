@@ -24,16 +24,13 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img src="img/logo.png" width=250px></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true"
-        aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="greet.html" id="navbarDropdownPortfolio" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="greet.html" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               회사소개 </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
               <a class="dropdown-item" href="greet.html">인사말</a>
@@ -43,8 +40,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="business1.html" id="navbarDropdownPortfolio"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="business1.html" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               사업소개</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
               <a class="dropdown-item" href="business1.html">고농도폐수처리설비</a>
@@ -54,8 +50,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               사업실적</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
               <a class="dropdown-item" href="portfolio-1-col.html">고농도폐수처리</a>
@@ -70,14 +65,14 @@
       </div>
     </div>
   </nav>
-
+  
   <!-- Wrap -->
   <div class="wrap">
     <!-- top img -->
     <div class="top-area mb-4" style="background-image: url(img/1company-img.jpg);">
       <h1 class="top-text">고객센터</h1>
     </div>
-
+  
     <div class="row main-content">
       <!-- Sidebar Column -->
       <div class="col-lg-2 mb-4">
@@ -89,10 +84,10 @@
       </div>
       <!-- Page Content -->
       <div class="container">
-
+  
         <!-- Page Heading/Breadcrumbs -->
         <h1 id="sub-menu">상담문의</h1>
-
+  
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
             <a href="index.html">Home</a>
@@ -100,51 +95,47 @@
           <li class="breadcrumb-item"><a href="contact.html">고객센터</a></li>
           <li class="breadcrumb-item"><a href="contact.html">상담문의</a></li>
         </ol>
-
-        <!-- Contact Form -->
-        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-        <div class="row">
-          <div class="col-lg-8 mb-4">
-            <h3>Send us a Message</h3>
-            <form name="sentMessage" id="contactForm" novalidate>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label>Full Name:</label>
-                  <input type="text" class="form-control" id="name" required
-                    data-validation-required-message="Please enter your name.">
-                  <p class="help-block"></p>
-                </div>
-              </div>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label>Phone Number:</label>
-                  <input type="tel" class="form-control" id="phone" required
-                    data-validation-required-message="Please enter your phone number.">
-                </div>
-              </div>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label>Email Address:</label>
-                  <input type="email" class="form-control" id="email" required
-                    data-validation-required-message="Please enter your email address.">
-                </div>
-              </div>
-              <div class="control-group form-group">
-                <div class="controls">
-                  <label>Message:</label>
-                  <textarea rows="10" cols="100" class="form-control" id="message" required
-                    data-validation-required-message="Please enter your message" maxlength="999"
-                    style="resize:none"></textarea>
-                </div>
-              </div>
-              <div id="success"></div>
-              <!-- For success/fail messages -->
-              <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
-            </form>
+  
+       <!-- Contact Form -->
+    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <div class="row">
+      <div class="col-lg-8 mb-4">
+        <h3>문의사항 등록</h3>
+        <form name="sentMessage" id="contactForm" novalidate>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>제목:</label>
+              <input type="text" class="form-control" id="phone" required data-validation-required-message="제목을 입력해주세요.">
+              <p class="help-block"></p>
+            </div>
           </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>작성자:</label>
+              <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+              <p class="help-block"></p>
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>이메일:</label>
+              <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>내용:</label>
+              <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+            </div>
+          </div>
+          <div id="success"></div>
+          <!-- For success/fail messages -->
+          <button type="submit" class="btn btn-primary" id="sendMessageButton">문의 보내기</button>
+        </form>
+      </div>
 
-        </div>
-        <!-- /.row -->
+    </div>
+    <!-- /.row -->
       </div>
       <!-- /.row -->
     </div>
@@ -155,13 +146,27 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-4 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+      <div class="m-0 text-center text-white">
+        <ul>
+          <li><span>TEL</span> 031-257-7676 </li>
+          <li><span>FAX</span> 031-257-7686 </li>
+          <li style="margin-right:0"><span>E-mail</span> juheong-1@hanmail.net </li>
+        </ul>
+      </div>
+      <div class="m-0 text-center">
+        <p> 사업자번호: 135-81-29393 상호명 : 주식회사 주흥환경  대표자 : 이길재
+          <br>
+          주 소 : 경기도 화성시 병점동로 164번길 39, 201호
+        </p>
+        <p class="m-0 text-center">Copyright &copy; (주)주흥환경 All rights reserved.</p>
+      </div>
     </div>
     <!-- /.container -->
+  
   </footer>
-
+  
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
