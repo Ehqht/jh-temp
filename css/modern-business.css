@@ -155,7 +155,8 @@ nav{font-family: 'Noto Sans KR', sans-serif; margin-bottom:5px}
 /* Index.html - Business Card */
 .card{
   cursor: pointer;
-  border-radius :0;
+  border-radius:0;
+  
 }
 .card-img{
   width:100%;
@@ -179,9 +180,7 @@ nav{font-family: 'Noto Sans KR', sans-serif; margin-bottom:5px}
 
 
 
-.wrap {
-  margin:0;
-}
+.wrap {  margin:0;}
 
 .content{
   margin-top: 20px;
