@@ -26,7 +26,7 @@ $email_body = "주흥환경 홈페이지에 새로운 문의사항이 등록되�
 주흥환경 웹사이트: http://www.jh-entech.co.kr";
 
 
-$headers = "From: juheong-1@hanmail.net\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers = "From: livia3609@gmail.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";   
 mail($to,$email_subject,$email_body,$headers);
 return true;         
