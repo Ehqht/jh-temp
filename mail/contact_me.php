@@ -19,6 +19,7 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 // Create the email and send the message
 $to = 'juheong-1@hanmail.net'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "새로운 문의사항이 있습니다. 제목:$phone 작성자: $name";
+$email_subject = "=?UTF-8?B?".base64_encode($email_subject)."?=";
 $email_body = "주흥환경 홈페이지에 새로운 문의사항이 등록되었습니다.\n\n"."세부사항은 다음과 같습니다.\n\n제목: $phone\n\n작성자: $name\n\n작성자 이메일: $email_address\n\n\n\n내용:\n$message
 
 
@@ -26,7 +27,7 @@ $email_body = "주흥환경 홈페이지에 새로운 문의사항이 등록되�
 주흥환경 웹사이트: http://www.jh-entech.co.kr";
 
 
-$headers = "From: juheong-1@hanmail.net\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers = "From: juheong\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";   
 mail($to,$email_subject,$email_body,$headers);
 return true;         
