@@ -500,9 +500,8 @@ footer span{color:#727272; padding:5px}
 }
 .sub-menu-btn p{margin:0;}
 
-
 /* Contact send btn*/
-#contactForm button {position:absolute; left:50%; text-align: center;}
+#contactForm button {margin:0 auto; text-align: center;}
 
 
 /* 이거 사용하나? */
