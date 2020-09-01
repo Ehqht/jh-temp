@@ -272,22 +272,24 @@ footer span{color:#727272; padding:5px}
   display:inline-block;
   border-bottom: 3px solid #bbbfcc;
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 20px;
   padding:25px;
   background-color: #00498c; color:white;
   width:inherit;
   min-height:80px;
 }
+.side-bar .side-menu a:hover{color:white; }
+
 .list-group-item{ padding-left:30px;}
 
 /* Work-list table */
 .work-list{margin:0 auto;}
-.work-tb  {width:100%; border-collapse:collapse;border-spacing:0; margin:0 auto;}
-.work-tb td{border-color:grey;border-style:solid;border-width:1px;font-size:14px;
+.work-tb  {width:100%; border-collapse:collapse;border-spacing:0; margin:10px auto;}
+.work-tb td{border-color:grey;border-style:solid;border-width:1px;font-size:15px;
   overflow:hidden;padding:10px 8px; text-align:center;vertical-align:middle}
 .work-tb th{ background-color: #4169e1; color:white; text-align:center;vertical-align:middle;
-  border-color:grey;border-style:solid;border-width:1px;font-size:15px;
+  border-color:grey;border-style:solid;border-width:1px;font-size:18px;
   font-weight:normal;overflow:hidden;padding:10px 8px;}
 .work-tb .work-tb-cm{text-align:center;vertical-align:middle}
 .work-tb .work-tb-lm{text-align:left;vertical-align:middle}
