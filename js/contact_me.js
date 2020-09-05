@@ -4,6 +4,7 @@ $(function() {
     preventSubmit: true,
     submitError: function($form, event, errors) {
       // additional error messages or events
+      alert('개인정보 취급방침에 동의하고 모든 내용을 작성해주세요.')
     },
     submitSuccess: function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
