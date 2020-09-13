@@ -288,7 +288,7 @@ footer span{color:#727272; padding:5px}
   width:inherit;
   min-height:80px;
 }
-.side-bar .side-menu a:hover{color:white; }
+.side-menu:hover{color:white; }
 
 .list-group-item{ padding-left:30px;}
 
@@ -369,8 +369,8 @@ footer span{color:#727272; padding:5px}
 .business-intro{
   position:relative;
   padding:15px 20px;  margin:15px auto;
-  font-weight: 400;  font-size:24px; text-align: center; letter-spacing: -2px;
 }
+.business-intro p{line-height: 1.5rem;  font-weight: 300;  font-size:18px; text-align: center; letter-spacing: -2px; color:#6c757d}
 .intro-effect:before{
   content:'“';  position:relative;
   top:25px; 
@@ -393,21 +393,23 @@ footer span{color:#727272; padding:5px}
 .business-content img{display:block; margin:auto;}
 
 
-.container .business-content .sub-tit::before{
+.business-content .sub-tit::before{
   content:'';
   margin-right:10px;
   display:inline-block;  
   width:10px;
   height:18px;
-  background: #4169e1;
-
+  background: #00A4D1;
 }
+.business-content .sub-tit{letter-spacing: -1px;}
+
+/* Not used
 .business-content h2{
   text-align: center;
   color:#4169e1;
   margin-top:40px; margin-bottom:40px;
   font-size:28px;  font-weight: 700;
-}
+}*/
 .business-content h3{
   margin-top:40px;
   font-size:25px; font-weight: 700;
@@ -472,14 +474,14 @@ footer span{color:#727272; padding:5px}
   width: 150px;
   min-width: 150px;
   border-radius: 75px;
-  border: 2px solid #4169e1;
+  border: 2px solid #00A4D1;
   margin:auto;
   text-align: center;
 }
 .circle-list li:before{
   font-family: 'Audiowide', cursive;
   font-size:40px;
-  color:#4169e1;
+  color:#00A4D1;
   opacity: 0.5;
   content:'>';
   position:absolute;
