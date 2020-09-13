@@ -16,16 +16,15 @@ tag > id > class 순서 */
 /* General Setting */
 .w4{ font-weight: 400 !important;}
 .w7{ font-weight: 700 !important;}
-.color-B{color: #00498c !important;}
+.color-B{color: #003E78 !important;}
 .color-Bmain{color:#4169e1 !important;}
 .color-G{color:#3cb371 !important;}
 .color-R{color:#df304d !important;}
 .bg-grey{background-color:#f0f0f0; padding:7px 15px;}
 
 
-body {
-  padding-top:0;  font-family: 'Noto Sans KR', sans-serif; word-break: keep-all;
-}
+body { padding-top:0;  font-family: 'Noto Sans KR', sans-serif; word-break: keep-all;}
+header{position:relative;}
 
 /* 하이퍼링크 색깔/밑줄 */
 a { color: #727272; text-decoration: none;}
@@ -153,31 +152,39 @@ nav{font-family: 'Noto Sans KR', sans-serif; margin-bottom:5px}
 
 }
 
+.background-custom{position:absolute; z-index:-1;bottom:-110px; width:100%; height: 35vh; margin:0; background-position:top; background-repeat: no-repeat;background-size:cover}
+
 
 /* Index.html - Business Card (portfolio)*/
-.main-business h2{text-align:center; font-weight: 500; font-size: 48px; letter-spacing: -3px; margin-top:2rem; margin-bottom:2rem;}
-.card{ cursor: pointer; border-radius:0; }
 
-.portfolio-item{height:450px;}
-.card-img{
-  width:100%;
-  height:220px;
-  border-radius:0;
-  background: no-repeat center center scroll;
-  background-size:cover;
+.main-business{position:relative; top:0; margin-top:10px;}
+.main-business h2{display: inline-block; text-align:left; z-index:2; font-weight: 500; font-size: 56px; letter-spacing: -3px; margin-top:0; margin-bottom:2rem; 
+  background: url('img/line.png') no-repeat center bottom;}
+.main-business h3{display:inline-block; margin-left: 1.5rem; text-align:left; font-weight: 500; font-size:22px; letter-spacing: -1px; color:grey; }
+
+.card{ cursor: pointer; border-radius:0; border:1px solid rgba(0,0,0,0.2); overflow: hidden; }
+.portfolio-item{height:450px; padding-right:4px; padding-left:4px;}
+
+.card-bg{position:absolute; z-index:10; width:100%; height:450px; opacity:0.0; background-color: #00A4D1; transition: opacity 400ms cubic-bezier(0.39, 0.575, 0.565, 1) 0ms; }
+.card-bg:hover{opacity:0.45;     
+  transition: opacity 400ms cubic-bezier(0.39, 0.575, 0.565, 1) 0ms;
+  background-color: #00A4D1;}
+
+.card-img{ width:100%; height:260px; border-radius:0; background: no-repeat center center scroll; background-size:cover;
+  transform: scale(1);
+  transition: transform 700ms cubic-bezier(0.165, 0.84, 0.44, 1) 0ms;
 }
 
-.card-img-top{
-  width:auto;
-  height:100%;
-  max-width: 100%;
-  max-height: 170px;
-  border-radius: 0;
+.card-img:hover{   
+  transform: scale(1.06);
+  transition: transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 0ms;
 }
-.card-title{text-align: center;}
+.card-head{overflow:hidden;}
+.card-title{text-align: center; font-weight: 500; letter-spacing:-2px;}
 .card-title a{ color:black;}
-.card-text{font-size:15px; text-align:center;}
-.col-lg.portfolio-item{padding-right:6px; padding-left:6px;}
+.card-text{margin-top: 1.5rem; font-size:15px; letter-spacing:-1px; text-align:center;}
+.portfolio{margin-top:70px; }
+
 
 
 .wrap {  margin:0;}
@@ -253,7 +260,7 @@ footer span{color:#727272; padding:5px}
 /* history */
 #history{ font-family: 'Noto Sans KR', sans-serif;}
 .his-top{
-  border-bottom:3px solid #00498c;
+  border-bottom:3px solid #003E78;
   padding-left: 15px;
   padding-bottom: 15px;
   font-weight: 700;
@@ -275,13 +282,18 @@ footer span{color:#727272; padding:5px}
   font-weight: 400;
   font-size: 20px;
   padding:25px;
-  background-color: #00498c; color:white;
+  background-color: #003E78; color:white;
   width:inherit;
   min-height:80px;
 }
 .side-bar .side-menu a:hover{color:white; }
 
 .list-group-item{ padding-left:30px;}
+
+
+/* Greet.html */
+#greet .img-feature{width:20%; height:600px; background: no-repeat center center scroll;}
+
 
 /* Work-list table */
 .work-list{margin:0 auto;}
@@ -345,12 +357,14 @@ footer span{color:#727272; padding:5px}
   }
 }
 
+
+
 /* Business Information */
 
 .business-intro{
   position:relative;
   padding:15px 20px;  margin:15px auto;
-  font-weight: 400;  font-size:20px; text-align: center;
+  font-weight: 400;  font-size:24px; text-align: center; letter-spacing: -2px;
 }
 .business-intro p:before{
   content:'“';  position:relative;
@@ -497,7 +511,7 @@ footer span{color:#727272; padding:5px}
   font-weight: 400;
 }
 .sub-menu-btn div.active{
-  background: #00498c;
+  background: #003E78;
   color:white;
 }
 .sub-menu-btn p{margin:0;}
