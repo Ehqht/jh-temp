@@ -150,16 +150,14 @@ nav{font-family: 'Noto Sans KR', sans-serif; margin-bottom:5px}
   width:100%;
   margin:0;
   padding:0;
-  background-color: rgba(0, 0, 0, 0.5);
-
+  background-color: rgba(0, 0, 0, 0.5)
 }
-
-.background-custom{position:absolute; z-index:-1;bottom:-110px; width:100%; height: 35vh; margin:0; background-position:top; background-repeat: no-repeat;background-size:cover}
 
 
 /* Index.html - Business Card (portfolio)*/
+.background-custom{position:absolute; z-index:-1; bottom:-135px; width:100%; height: 35vh; margin:0; background-position:top; background-repeat: no-repeat;background-size:cover}
 
-.main-business{position:relative; top:0; margin-top:10px;}
+.main-business{position:relative; top:0; margin-top:28px;}
 .main-business h2{display: inline-block; text-align:left; z-index:2; font-weight: 500; font-size: 56px; letter-spacing: -3px; margin-top:0; margin-bottom:2rem; 
   background: url('img/line.png') no-repeat center bottom;}
 .main-business h3{display:inline-block; margin-left: 1.5rem; text-align:left; font-weight: 500; font-size:22px; letter-spacing: -1px; color:grey; }
@@ -167,10 +165,10 @@ nav{font-family: 'Noto Sans KR', sans-serif; margin-bottom:5px}
 .card{ cursor: pointer; border-radius:0; border:1px solid rgba(0,0,0,0.2); overflow: hidden; }
 .portfolio-item{height:450px; padding-right:4px; padding-left:4px;}
 
-.card-bg{position:absolute; z-index:10; width:100%; height:450px; opacity:0.0; background-color: #00A4D1; transition: opacity 400ms cubic-bezier(0.39, 0.575, 0.565, 1) 0ms; }
+.card-bg{position:absolute; z-index:10; width:100%; height:450px; opacity:0.0; background-color: black; transition: opacity 400ms cubic-bezier(0.39, 0.575, 0.565, 1) 0ms; }
 .card-bg:hover{opacity:0.45;     
   transition: opacity 400ms cubic-bezier(0.39, 0.575, 0.565, 1) 0ms;
-  background-color: #0096BF;}
+  background-color: black;}
 
 .card-img{ width:100%; height:260px; border-radius:0; background: no-repeat center center scroll; background-size:cover;
   transform: scale(1);
@@ -185,7 +183,7 @@ nav{font-family: 'Noto Sans KR', sans-serif; margin-bottom:5px}
 .card-title{text-align: center; font-weight: 600; letter-spacing:-2px;}
 .card-title a{ color:black;}
 .card-text{margin-top: 1.5rem; font-size:17px; letter-spacing:-1px; color:#333333; text-align:center;}
-.portfolio{margin-top:70px; }
+.portfolio{margin-top:90px; }
 
 
 
@@ -297,8 +295,8 @@ footer span{color:#727272; padding:5px}
 #greet .img-feature{width:27%; height:600px; background:no-repeat 60% bottom scroll; background-size:cover; margin:auto;}
 #greet-content{width:67%; margin:10px auto;}
 #greet h2 {font-size:24px; font-weight: 500; color:#333333; text-align: center; margin:20px auto; letter-spacing: -2px;}
-#greet h3{letter-spacing: -2px; margin-top:25px; font-size:22px; line-height: 2.5rem;}
-#greet p{ text-align:justify; letter-spacing: -1px; font-size:18px; }
+#greet h3{letter-spacing: -2px; margin-top:2.5rem; font-size:22px; line-height: 2.5rem;}
+#greet p{ text-align:justify; letter-spacing: -1px; font-size:16px; }
 
 /* Work-list table */
 .work-list{margin:0 auto;}
@@ -307,7 +305,7 @@ footer span{color:#727272; padding:5px}
   overflow:hidden;padding:10px 8px; text-align:center;vertical-align:middle}
 .work-tb th{ background-color: #00A4D1; color:white; text-align:center;vertical-align:middle;
   border-color:#bbbfcc;border-style:solid;border-width:1px;font-size:18px;
-  font-weight:normal;overflow:hidden;padding:10px 8px;}
+  font-weight:normal;overflow:hidden;padding:10px 8px; word-break:break-all;}
 .work-tb .work-tb-cm{text-align:center;vertical-align:middle}
 .work-tb .work-tb-lm{text-align:left;vertical-align:middle}
 
