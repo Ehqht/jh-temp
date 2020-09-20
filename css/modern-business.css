@@ -370,7 +370,7 @@ footer span{color:#727272; padding:5px}
   position:relative;
   padding:15px 20px;  margin:15px auto;
 }
-.business-intro p{line-height: 1.5rem;  font-weight: 300;  font-size:20px; text-align: center; letter-spacing: -2px; color:#6c757d; margin:0;}
+.business-intro p{line-height: 1.5rem;  font-weight: 300;  font-size:20px; text-align: center; letter-spacing: -1px; color:#6c757d; margin:0;}
 .intro-effect:before{
   content:'“';  position:relative;
   top:25px; 
@@ -383,12 +383,12 @@ footer span{color:#727272; padding:5px}
   font-size:90px;  font-weight: 500; font-family: "Black Han Sans", sans-serif;
   color:#0096BF; opacity:0.4;
 }
-
 .business-content{
   margin:0 auto;
   width:100%;
   font-family: 'NanumBarunGothic', sans-serif; 
 }
+.business-content p {font-size:17px}
 
 .business-content img{display:block; margin:auto;}
 
@@ -446,6 +446,11 @@ footer span{color:#727272; padding:5px}
   font-size:17px;
   margin-top: 10px;
 }
+
+.carousel-item {
+  height:77vh;
+}
+
 
 /* Business 3 - table */
 .normal-tb  {font-family: 'Noto Sans KR', sans-serif; width:100%; border-collapse:collapse;border-spacing:0; margin:10px auto; margin-bottom:40px; }
