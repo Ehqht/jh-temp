@@ -391,9 +391,29 @@ footer span{color:#727272; padding:5px}
 .business-content p {font-size:17px}
 
 .business-content img{display:block; margin:auto;}
+.business-content .certi-name{
+  display:inline-block;
+  max-height:100px;
+  position: relative;
+  top:315px;
+  font-size:24px;
+  color:#003E78;
+  font-weight: 600;
+  text-align:left;
+  letter-spacing: -1px;
+}
+.business-content .certi-name:before{
+  content:'';
+  position:absolute;
+  left:-20px;
+  display:inline-block;  
+  width:5px;
+  height:68px;
+  background: #003E78;
 
+}
 
-.business-content .sub-tit::before{
+.business-content .sub-tit:before{
   content:'';
   margin-right:10px;
   display:inline-block;  
