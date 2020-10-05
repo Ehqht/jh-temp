@@ -41,7 +41,7 @@ ul{ padding:0; list-style: none;}
 nav{font-family: 'Noto Sans KR', sans-serif; margin-bottom:5px}
 
 .navbar-nav{width:100%; margin: 0 auto; text-align: center; flex-direction: row;}
-.nav-item{margin:0 auto; font-size: 22px;}
+.nav-item{margin:0 auto; font-size: 22px; width:25%;}
 
 .nav-sub{
   position: absolute;
@@ -62,16 +62,16 @@ nav{font-family: 'Noto Sans KR', sans-serif; margin-bottom:5px}
   margin:0 auto;
 }
 .nav-sub-list.container{
-  padding-left: 16.6rem;
-  padding-right: 9.5rem;
+  padding-left: 280px;
+  padding-right: 170px;
   align-items: flex-start;
 }
 .collapse.container{
   padding:0;
 }
 .nav-sub0{
-  margin: 0.5rem auto;
-  padding:0.5rem 0;
+  margin: 0.6rem auto;
+  padding: 0.6rem 0;
   width:25%;
   height:100%;
   text-align: center;
@@ -283,7 +283,7 @@ footer span{color:#727272; padding:5px}
   font-size: 20px;
   padding:25px;
   background-color: #003E78; color:white;
-  width:inherit;
+  width:100%;
   min-height:80px;
 }
 .side-menu:hover{color:white; }
@@ -585,6 +585,7 @@ footer span{color:#727272; padding:5px}
 }
 
 @media (max-width: 1200px){
+  .nav-link{font-size:20px;}
   .main-business h2{font-size: 46px;}
   .main-business h3{font-size: 16px; letter-spacing: -1px;}
 }
@@ -601,7 +602,9 @@ footer span{color:#727272; padding:5px}
   #greet h2{font-size: 24px;}
   #greet h3{font-size: 20px;}
   .top-area .top-text h1{width:100%; display:block; right:0; }
-  .top-area .top-text p{width:100%; display:block; right:0;}
+  .top-area .top-text p{width:100%; display:block; right:0; text-align:center;}
+  
+  .list-group-item{text-align: center; padding: .75rem 1.25rem;}
 }
 @media (max-width: 768px){
   .main-business h2{font-size: 32px;}
@@ -612,6 +615,9 @@ footer span{color:#727272; padding:5px}
   #history .history-events{font-size:14px; padding:3px;}
 }
 @media (max-width: 576px){
+  .main-content .container{padding:20px;}
+  .main-content .title-bar h1{font-size:28px; margin-bottom: .5rem;}
+  .main-content .breadcrumb{font-size:12px;}
   .main-business h2{font-size: 26px; margin-left:3rem;} 
   .main-business h3{font-size: 9px; letter-spacing: -1px; margin-left:.5rem;}
   .nav-link{font-size:15px;}
@@ -619,10 +625,13 @@ footer span{color:#727272; padding:5px}
   #greet h2{font-size: 16px;}
   #greet h3{font-size: 14px; margin:.5rem auto; line-height: 1.5rem;}
   #greet p{font-size: 10px; margin:.5rem auto; line-height: 1.5rem;}
+
   
   #greet .intro-effect:after{top:40px; font-size:56px;}
   #greet .intro-effect:before{top:15px; font-size:56px;}
-  #greet-content{margin:1rem auto;}
+  #greet-content{margin:1rem auto; width:90%;}
+  #greet .img-feature{display:none;}
+
   #history .history-year{padding:8px; font-size:20px} 
   #history .history-events{padding:3px; font-size:10px; }
   #history .history-content{margin-left:2em;}
