@@ -562,7 +562,7 @@ footer span{color:#727272; padding:5px}
     max-width: 810px;
   }
   .navbar .container{
-    max-width:900px;
+    max-width:1200px;
   }
 }
 @media (min-width: 1200px){ 
@@ -595,11 +595,13 @@ footer span{color:#727272; padding:5px}
     margin:0 auto;
   }
   .top-util{display:none}
-  .nav-link{font-size:1.2rem}
+  .nav-link{font-size:18px}
   .main-business h2{font-size: 36px;}
   .main-business h3{font-size: 14px;  letter-spacing: -1px;}
   #greet h2{font-size: 24px;}
   #greet h3{font-size: 20px;}
+  .top-area .top-text h1{width:100%; display:block; right:0; }
+  .top-area .top-text p{width:100%; display:block; right:0;}
 }
 @media (max-width: 768px){
   .main-business h2{font-size: 32px;}
@@ -607,6 +609,7 @@ footer span{color:#727272; padding:5px}
   .portfolio {margin-top:30px;}
   #greet h2{font-size: 20px;}
   #greet h3{font-size: 18px;}
+  #history .history-events{font-size:14px; padding:3px;}
 }
 @media (max-width: 576px){
   .main-business h2{font-size: 26px; margin-left:3rem;} 
@@ -620,6 +623,10 @@ footer span{color:#727272; padding:5px}
   #greet .intro-effect:after{top:40px; font-size:56px;}
   #greet .intro-effect:before{top:15px; font-size:56px;}
   #greet-content{margin:1rem auto;}
+  #history .history-year{padding:8px; font-size:20px} 
+  #history .history-events{padding:3px; font-size:10px; }
+  #history .history-content{margin-left:2em;}
+
 }
 
 
