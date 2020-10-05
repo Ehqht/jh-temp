@@ -44,6 +44,7 @@ nav{font-family: 'Noto Sans KR', sans-serif; margin-bottom:5px}
 .nav-item{margin:0 auto; font-size: 22px; width:25%;}
 
 .nav-sub{
+  flex-basis: 100%;
   position: absolute;
   top: 100%;
   left: 0;
@@ -62,6 +63,7 @@ nav{font-family: 'Noto Sans KR', sans-serif; margin-bottom:5px}
   margin:0 auto;
 }
 .nav-sub-list.container{
+  width:100%;
   padding-left: 280px;
   padding-right: 170px;
   align-items: flex-start;
@@ -492,9 +494,6 @@ footer span{color:#727272; padding:5px}
 #bus4 .circle-list li:before{left:-40px}
 
 /* Sub menu button */
-/*
-.sub-menu-btn a:hover{color:white; background:#4169e1}*/
-
 
 
 .sub-menu-btn div{
@@ -505,9 +504,10 @@ footer span{color:#727272; padding:5px}
   margin:15px 0;
   margin-bottom:30px;
   border-bottom:2px solid #003E78;
+  
 }
 .sub-menu-btn.col3 div{ width:33%;}
-.sub-menu-btn.col4 div{ width:25%;}
+.sub-menu-btn.col4 div{ width:25%; }
 .sub-menu-btn.col2 div{width:49.5%;}
 .sub-menu-btn a{
   color:grey;
@@ -537,52 +537,6 @@ footer span{color:#727272; padding:5px}
   justify-content: space-between;
 }
 
-/* min-width:100 - 최소 너비가 100일때까지 ~~ 한다. 너비가 100보다 클때 적용*/
-
-@media (min-width: 576px){ 
-  .main-content .container {
-    max-width: 760px;
-  }
-  .navbar .container{
-    max-width:768px;
-  }
-}
-
-@media (min-width: 768px){ 
-  .main-content .container {
-    max-width: 890px;
-  }
-  .navbar .container{
-    max-width:900px;
-  }
-}
-
-@media (min-width: 992px){ 
-  .main-content .container {
-    max-width: 810px;
-  }
-  .navbar .container{
-    max-width:1200px;
-  }
-}
-@media (min-width: 1200px){ 
-  .main-content .container {
-    max-width: 990px;
-  }
-  .navbar .container{
-    max-width:1400px;
-  }
-}
-
-@media (min-width: 1400px){ 
-  .main-content .container {
-    max-width: 1140px;
-  }
-  .navbar .container{
-    max-width:1400px;
-  }
-
-}
 
 @media (max-width: 1200px){
   .nav-link{font-size:20px;}
@@ -592,7 +546,7 @@ footer span{color:#727272; padding:5px}
 
 @media (max-width: 992px){ 
   .nav-sub-list.container {
-    padding:0;
+    padding: 0;
     margin:0 auto;
   }
   .top-util{display:none}
@@ -620,8 +574,12 @@ footer span{color:#727272; padding:5px}
   .main-content .breadcrumb{font-size:12px;}
   .main-business h2{font-size: 26px; margin-left:3rem;} 
   .main-business h3{font-size: 9px; letter-spacing: -1px; margin-left:.5rem;}
+  .nav-sub-list.container {
+    padding: 0 .8rem ;
+    margin:0 auto;
+  }
   .nav-link{font-size:15px;}
-  .nav-sub-text{font-size: 12px; line-height: 2px;}
+  .nav-sub-text{font-size: 10px; line-height: 2px;}
   #greet h2{font-size: 16px;}
   #greet h3{font-size: 14px; margin:.5rem auto; line-height: 1.5rem;}
   #greet p{font-size: 10px; margin:.5rem auto; line-height: 1.5rem;}
