@@ -57,11 +57,13 @@ nav{font-family: 'Noto Sans KR', sans-serif; margin-bottom:5px}
   background-clip: padding-box;
   text-align: center;
 }
+
 .nav-sub-list{
   padding-bottom: 20px;
   margin:0 auto;
 }
 .nav-sub-list.container{
+  width:100%;
   padding-left: 280px;
   padding-right: 170px;
   align-items: flex-start;
@@ -592,7 +594,7 @@ footer span{color:#727272; padding:5px}
 
 @media (max-width: 992px){ 
   .nav-sub-list.container {
-    padding:0;
+    padding: 0 .8rem ;
     margin:0 auto;
   }
   .top-util{display:none}
@@ -621,7 +623,7 @@ footer span{color:#727272; padding:5px}
   .main-business h2{font-size: 26px; margin-left:3rem;} 
   .main-business h3{font-size: 9px; letter-spacing: -1px; margin-left:.5rem;}
   .nav-link{font-size:15px;}
-  .nav-sub-text{font-size: 12px; line-height: 2px;}
+  .nav-sub-text{font-size: 10px; line-height: 2px;}
   #greet h2{font-size: 16px;}
   #greet h3{font-size: 14px; margin:.5rem auto; line-height: 1.5rem;}
   #greet p{font-size: 10px; margin:.5rem auto; line-height: 1.5rem;}
