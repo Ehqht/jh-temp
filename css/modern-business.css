@@ -42,7 +42,9 @@ nav{font-family: 'Noto Sans KR', sans-serif; margin-bottom:5px}
 
 .navbar-nav{width:100%; margin: 0 auto; text-align: center; flex-direction: row;}
 .nav-item{margin:0 auto; font-size: 22px; width:25%;}
-
+.navbar .container{
+  max-width:1400px;
+}
 .nav-sub{
   position: absolute;
   top: 100%;
@@ -541,6 +543,7 @@ footer span{color:#727272; padding:5px}
 
 /* min-width:100 - 최소 너비가 100일때까지 ~~ 한다. 너비가 100보다 클때 적용*/
 
+/*
 @media (min-width: 576px){ 
   .main-content .container {
     max-width: 760px;
@@ -583,13 +586,14 @@ footer span{color:#727272; padding:5px}
   .navbar .container{
     max-width:1400px;
   }
-
 }
+*/
 
 @media (max-width: 1200px){
   .nav-link{font-size:20px;}
   .main-business h2{font-size: 46px;}
   .main-business h3{font-size: 16px; letter-spacing: -1px;}
+  .sub-menu-btn{font-size: 20px;}
 }
 
 @media (max-width: 992px){ 
