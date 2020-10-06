@@ -160,7 +160,7 @@ nav{font-family: 'Noto Sans KR', sans-serif; margin-bottom:5px}
 /* Index.html - Business Card (portfolio)*/
 .background-custom{
   background-image: url('../img/4.png');
-  position:relative; z-index:-1; top:10px; height: 300px; margin:0; background-position:center top; background-repeat: no-repeat; background-size:100%;}
+  position:relative; z-index:-1; top:-5px; height: 300px; margin:0; background-position:center top; background-repeat: no-repeat; background-size:100%;}
 
 .main-business{position:relative; top:-305px;}
 .main-business h2{display: inline-block; text-align:left; font-weight: 500; font-size: 56px; letter-spacing: -3px; margin:0;}
@@ -332,7 +332,8 @@ footer span{color:#727272; padding:5px}
 
 
 /* Work-list table */
-.work-list{margin:0 auto;}
+.work-list{margin:0 auto; overflow: scroll; -ms-overflow-style: none;}
+.work-list::-webkit-scrollbar{ display:none; }
 .work-tb  {width:100%; border-collapse:collapse;border-spacing:0; margin:10px auto;}
 .work-tb td{border-color:#bbbfcc;border-style:solid;border-width:1px;font-size:15px;
   overflow:hidden;padding:10px 8px; text-align:center;vertical-align:middle}
@@ -534,6 +535,10 @@ footer span{color:#727272; padding:5px}
   justify-content: space-between;
 }
 
+@media (max-width: 1400px){
+.background-custom{top:10px;}
+}
+
 @media (max-width: 1200px){
   .nav-link{font-size:20px;}
   .main-business h2{font-size: 46px;}
@@ -574,6 +579,9 @@ footer span{color:#727272; padding:5px}
   .main-business h3{font-size: 9px; letter-spacing: -1px; margin-left:.5rem;}
   .nav-link{font-size:15px;}
   .nav-sub-text{font-size: 10px; line-height: 2px;}
+
+  .portfolio-item{padding:10px 20px;}
+
   #greet h2{font-size: 16px;}
   #greet h3{font-size: 14px; margin:.5rem auto; line-height: 1.5rem;}
   #greet p{font-size: 10px; margin:.5rem auto; line-height: 1.5rem;}
@@ -604,7 +612,8 @@ footer span{color:#727272; padding:5px}
 
   .normal-tb th{font-size:12px;}
   .normal-tb td{font-size:10px;}
-
+  .work-tb th{font-size:12px;}
+  .work-tb td{font-size:10px;}
 }
 
 
