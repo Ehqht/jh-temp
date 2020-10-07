@@ -489,10 +489,7 @@ footer span{color:#727272; padding:5px}
 .circle-list{border-spacing:30px;}
 
 /* Sub menu button */
-/*
-.sub-menu-btn a:hover{color:white; background:#4169e1}*/
-
-
+.sub-menu-btn {display: inline-block; width:100%}
 
 .sub-menu-btn div{
   float:left;
