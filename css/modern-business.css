@@ -427,8 +427,11 @@ footer span{color:#727272; padding:5px}
   height:18px;
   background: #0096BF;
 }
-.business-content .sub-tit{letter-spacing: -1px;   margin-top:40px; font-size:25px; font-weight: 700; line-height: 1.75rem;}
-
+.business-content .sub-tit{letter-spacing: -1px;   margin-top:25px; font-size:25px; font-weight: 700; line-height: 1.75rem;}
+.business-content .row .sub-tit{display:block;}
+.business-content .row .img-fluid{display:inline-block;}
+.business-content .row .w-47{width:47%;}
+.business-content .subtits.row {justify-content: center;}
 .business-content h4{
   font-size:21px;
   font-weight: 400;
@@ -581,6 +584,10 @@ footer span{color:#727272; padding:5px}
   .nav-sub-text{font-size: 14px; line-height: 2px;}
   .main-business-tt h2{font-size: 36px;}
   .main-business-tt h3{font-size: 14px;  letter-spacing: -1px;}
+
+  .business-content .subtits.row{display:block;}
+  .business-content .subtits.row .w-47{width:100%;}
+  .business-content .subtits.row .img-fluid{display:block;}
 
   #greet .intro-effect:after{top:40px; font-size:62px;}
   #greet .intro-effect:before{top:15px; font-size:62px;}
