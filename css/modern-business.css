@@ -234,13 +234,11 @@ nav{font-family: 'Noto Sans KR', sans-serif; margin-bottom:5px}
   background-size: cover;
 }
 
-<<<<<<< HEAD
+
 .business-content .subtits #carouselExampleIndicators{width:45%; height:auto;}
 .business-content .subtits #carouselExampleIndicators video{max-height:600px; max-width:460px;}
 .business-content .subtits #carouselExampleIndicators img{max-height:600px; max-width:460px;}
 
-=======
->>>>>>> parent of bd6d562... DAF imgae/video added
 video{width:100%; max-height:700px;}
 
 
