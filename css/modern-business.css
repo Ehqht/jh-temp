@@ -234,6 +234,13 @@ nav{font-family: 'Noto Sans KR', sans-serif; margin-bottom:5px}
   background-size: cover;
 }
 
+<<<<<<< HEAD
+.business-content .subtits #carouselExampleIndicators{width:45%; height:auto;}
+.business-content .subtits #carouselExampleIndicators video{max-height:600px; max-width:460px;}
+.business-content .subtits #carouselExampleIndicators img{max-height:600px; max-width:460px;}
+
+=======
+>>>>>>> parent of bd6d562... DAF imgae/video added
 video{width:100%; max-height:700px;}
 
 
@@ -466,6 +473,8 @@ footer span{color:#727272; padding:5px}
   font-size:17px;
   margin-top: 10px;
 }
+.title-bar-h1{position:relative; display:flex; flex-direction: row;}
+.title-bar img{position:absolute; width:35px; right:-40px; }
 
 
 /* Business 3 - table */
@@ -550,6 +559,29 @@ footer span{color:#727272; padding:5px}
 /* Contact send btn*/
 #contactForm button {margin:0 auto; text-align: center;}
 
+[data-tooltip-text]:hover {
+  position: relative;
+
+}
+
+[data-tooltip-text]:hover:after {
+	content: attr(data-tooltip-text);
+
+  position: absolute;
+  left:35px;
+  top:5px;
+  width:250px;
+  /*background-color: rgba(0, 0, 0, 0.8);*/
+
+  color:#6c757d; 
+  
+	font-size: 14px;
+  letter-spacing: 0px;
+  font-weight:400;
+  padding-left: .25rem;
+  padding-right: .25rem;
+	z-index: 9999;
+}
 
 /* 이거 사용하나? */
 .flex-box{
@@ -588,6 +620,8 @@ footer span{color:#727272; padding:5px}
   .business-content .subtits.row{display:block;}
   .business-content .subtits.row .w-47{width:100%;}
   .business-content .subtits.row .img-fluid{display:block;}
+  .business-content .subtits #carouselExampleIndicators{width:100%; margin-bottom:.5rem;}
+  .business-content .subtits #carouselExampleIndicators video{display:block; margin:auto; min-height:700px;}
 
   #greet .intro-effect:after{top:40px; font-size:62px;}
   #greet .intro-effect:before{top:15px; font-size:62px;}
@@ -621,6 +655,8 @@ footer span{color:#727272; padding:5px}
   .main-content .breadcrumb{display:none!important;}
   .main-business-tt h2{font-size: 20px; margin-left:3rem;} 
   .main-business-tt h3{font-size: 9px; letter-spacing: -1px; margin-left:.5rem;}
+  [data-tooltip-text]:hover:after{font-size:11px; top:9px;}
+
   .nav-link{font-size:15px;}
   .nav-sub{display:none!important;}
 
