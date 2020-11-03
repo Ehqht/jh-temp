@@ -587,52 +587,52 @@ footer span{color:#727272; padding:5px}
   width:100%;
   padding-left:20px;
   padding-right:20px;
-  
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* FOR BBS ********************************************************************************************/
 
 /* 게시판 목록 */
-#board_area {	width: 900px;	position: relative;}
-.list-table {	margin-top: 40px;}
+#board_area {	width: 100%;	position: relative; text-align: center;}
+.list-table {	margin-top:40px; margin-bottom:30px; width:100%;}
 .list-table thead th{
-	height:40px;
-	border-top:2px solid #0096BF;
-	border-bottom:1px solid #CCC;
+	height:50px;
+	border-bottom:2px solid #00A4D1;
+	border-top:1px solid #CCC;
 	font-weight: bold;
 	font-size: 17px;
 }
 .list-table tbody td{
 	text-align:center;
 	padding:10px 0;
-	border-bottom:1px solid #CCC; height:20px;
+  border-bottom:1px solid #CCC;
+  height:20px;
 	font-size: 14px 
 }
 #write_btn {
-	position: absolute;
-	margin-top:20px;
-	right: 0;
+  position: absolute;
+  bottom:0;
+	right: 3%;
 }
 
 #page_num {
-	font-size: 14px;
-	margin-left: 260px;
-	margin-top:30px; 
+  position: absolute;
+  font-size: 14px;
+  padding: 0 50%;
 }
-#page_num ul li {
+#board_area ul li {
 	float: left;
 	margin-left: 10px; 
-	text-align: center;
+  text-align: center;
+  padding-left:1px;
+  padding-right:1px;
 }
-.fo_re {
-	font-weight: bold;
-	color:red;
-}
+.fo_re {font-weight: bold; color:#003E78;}
 
 /* 게시판 글쓰기 */
 #board_write {
-	width:900px;
+	width:90%;
 	position:relative;
 	margin:0 auto;
 }

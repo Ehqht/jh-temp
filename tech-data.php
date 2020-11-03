@@ -16,7 +16,7 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/modern-business.css" rel="stylesheet">
+  <link href="css/modern-business.css?after" rel="stylesheet">
  
 </head>
 
@@ -139,7 +139,7 @@
           </ol>
         </div>
 
-      <div class="contact-content">
+      <div class="contact-content" id="board_area">
         <table class="list-table">
           <thead>
           <tr>
@@ -158,7 +158,7 @@
             }
               $sql = mq("select * from board");
               $row_num = mysqli_num_rows($sql); //게시판 총 레코드 수
-              $list = 10; //한 페이지에 보여줄 개수
+              $list = 5; //한 페이지에 보여줄 개수
               $block_ct = 5; //블록당 보여줄 페이지 개수
 
               $block_num = ceil($page/$block_ct); // 현재 페이지 블록 구하기
@@ -199,8 +199,8 @@
         </table>
     
         <!---페이징 넘버 --->
-        <div id="page_num">
-          <ul>
+        <div id="" >
+          <ul class="flex-box">
           <?php
           if($page <= 1)
           { //만약 page가 1보다 크거나 같다면
@@ -237,7 +237,7 @@
           </ul>
         </div>
         <div id="write_btn">
-          <a href="./ck_write.php"><button>글쓰기</button></a>
+          <a href="./ck_write.php"><button class="btn btn-info"> 글쓰기 </button></a>
         </div>
       </div>
     </div>
