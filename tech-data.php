@@ -1,6 +1,7 @@
+<?php include  "./db.php"; ?>
+
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
 
   <meta charset="utf-8">
@@ -16,7 +17,6 @@
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
  
-
 </head>
 
 <body>
@@ -85,7 +85,7 @@
           <li class="nav-sub0 last">
             <ul>
               <li><a class="nav-sub-text" href="contact.html">상담문의</a></li>
-              <li><a class="nav-sub-text" href="tech-data.html">기술자료</a></li>
+              <li><a class="nav-sub-text" href="tech-data.php">기술자료</a></li>
               <li><a class="nav-sub-text" href=""></a>&nbsp;</li>
               <li><a class="nav-sub-text" href=""></a>&nbsp;</li>
               <li><a class="nav-sub-text" href=""></a>&nbsp;</li>
@@ -119,7 +119,7 @@
       <div class="col-lg-2 mb-4">
         <a href="contact.html" class="side-menu text-center">고객센터</a>
         <div class="list-group">
-          <a href="contact.html" class="list-group-item">기술자료</a>
+          <a href="tech-data.php" class="list-group-item">기술자료</a>
 
         </div>
       </div>
@@ -134,47 +134,13 @@
             <a href="index.html">Home</a>
           </li>
           <li class="breadcrumb-item"><a href="contact.html">고객센터</a></li>
-          <li class="breadcrumb-item"><a href="contact.html">기술자료</a></li>
+          <li class="breadcrumb-item"><a href="tech-data.php">기술자료</a></li>
         </ol>
   
        <!-- Contact Form -->
     <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <div class="contact-content">
       
-      <script>
-        import * as firebase from "node_modules/@firebase/app";
-        
-        import 'firebase/firestore'
-
-        var app = firebase.initializeApp({
-          apiKey: "AIzaSyD9MrHy57wBbMlXHTK8icOcPTywzi8DrhM",
-          authDomain: "jh-entech.firebaseapp.com",
-          databaseURL: "https://jh-entech.firebaseio.com",
-          projectId: "jh-entech",
-          storageBucket: "jh-entech.appspot.com",
-          messagingSenderId: "326113463086",
-          appId: "1:326113463086:web:e6198f169fdf23932508bf",
-          measurementId: "G-12DVG7FZEH"
-        });
-        var db = app.firestore();
-        db.collection("users").add({
-          first: "Ada",
-          last: "Lovelace",
-          born: 1815
-        })
-          .then(function (docRef) {
-            console.log("Document written with ID: ", docRef.id);
-          })
-          .catch(function (error) {
-            console.error("Error adding document: ", error);
-          });
-      </script>
-    
-
-      <section id="event-details-container">
-        <button id="startRsvp">관리자 로그인</button>
-      </section>
-      <section id="firebaseui-auth-container"></section>
       
     </div>
     <!-- /.row -->
