@@ -1,4 +1,4 @@
-<?php include  "./bbs/db.php"; ?>
+<?php include  "./db.php"; ?>
 
 <!DOCTYPE html>
 <html lang="ko">

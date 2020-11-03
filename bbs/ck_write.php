@@ -1,9 +1,12 @@
 <?php
 include "./db.php"; /* db load */
 ?>
-<link rel="stylesheet" type="text/css" href="./css/jquery-ui.css" />
-<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="./js/jquery-ui.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css?after" />
+<script type="text/javascript" src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../vendor/jquery/jquery-ui.min.js"></script>
+
+
 <script type="text/javascript">
 	$(function(){
 		$("#writepass").dialog({
@@ -24,7 +27,7 @@ $bpw = password_hash($password['admin'], PASSWORD_DEFAULT);
 <div id='writepass'>
 	<form action="" method="post">
  		<p>비밀번호: <input type="password" name="pw_chk" /> <input type="submit" value="확인" /></p>
-		<p><a href="./index.php">돌아가기</a></p>
+		<p><a href="../tech-data.php">돌아가기</a></p>
 	 </form>
 </div>
 	 <?php
