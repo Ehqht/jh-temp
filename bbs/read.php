@@ -156,18 +156,17 @@
 		</div>
 	</div>
 	<div id="board-file">
-		파일 : <?php if ($board['file']!="") {?> <a href="./upload/<?php echo $board['file']; ?>" type="text/html" download><?php echo $board['file']; } else echo '없음'?></a>
+		파일 : <?php if ($board['file']!="") {?> <a href="../upload/<?php echo $board['file']; ?>" type="text/html" download><?php echo $board['file']; } else echo '없음'?></a>
 	</div>
 	<div id="bo_content">
 		<?php echo nl2br("$board[content]"); ?>
 	</div>
 	<div id="bo_line"></div>
 	<!-- 목록, 수정, 삭제 -->
-	<div id="bo_ser">
-		<ul>
-			<li><a href="../tech-data.php">[목록으로]</a></li>
-			<li><a href="modify.php?idx=<?php echo $board['idx']; ?>">[수정]</a></li>
-			<li><a href="delete.php?idx=<?php echo $board['idx']; ?>">[삭제]</a></li>
+	<div id="bo_ser" class="flex-box">
+			<div><a href="../tech-data.php">[목록으로]</a></div>
+			<div><a href="modify.php?idx=<?php echo $board['idx']; ?>">[수정]</a></div>
+			<div><a href="delete.php?idx=<?php echo $board['idx']; ?>">[삭제]</a></div>
 		</ul>
 	</div>
 </div>
