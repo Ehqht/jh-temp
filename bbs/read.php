@@ -155,8 +155,8 @@
 			<?php echo $board['name']; ?> &nbsp;&nbsp;<?php echo $board['date']; ?> &nbsp;&nbsp;조회:<?php echo $board['hit']; ?>
 		</div>
 	</div>
-	<div class="my-2 pr-4 text-right">
-		파일 : <?php if ($board['file']!="") {?><a href="./upload/ <?php echo $board['file']; ?>" type="text/html" download><?php echo $board['file']; } else echo '없음'?></a>
+	<div id="board-file">
+		파일 : <?php if ($board['file']!="") {?> <a href="./upload/<?php echo $board['file']; ?>" type="text/html" download><?php echo $board['file']; } else echo '없음'?></a>
 	</div>
 	<div id="bo_content">
 		<?php echo nl2br("$board[content]"); ?>
