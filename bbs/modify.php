@@ -1,4 +1,10 @@
-<?php include  "./db.php"; ?>
+<?php
+	include "./db.php";
+   
+	$bno = $_GET['idx'];
+	$sql = mq("select * from board where idx='$bno';");
+	$board = $sql->fetch_array();
+ ?>
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -140,28 +146,22 @@
         </div>
 
         <div id="board_write">
-        <h5>-- 등록 --</h5>
+        <h5>-- 수정 --</h5>
             <div id="write_area">
-                <form action="write_ok.php" method="post" enctype="multipart/form-data">
+                <form action="modify_ok.php?idx=<?php echo $bno; ?>" method="post">
                     <div id="in_title">
-                        <textarea name="title" id="utitle" rows="1" cols="55" placeholder="제목" maxlength="100" required></textarea>
+                        <textarea name="title" id="utitle" rows="1" cols="55" placeholder="제목" maxlength="100" required><?php echo $board['title']; ?></textarea>
                     </div>
                     <div class="wi_line"></div>
                     <div id="in_name">
-                        <textarea name="name" id="uname" rows="1" cols="55" placeholder="글쓴이" maxlength="100" required></textarea>
+                        <textarea name="name" id="uname" rows="1" cols="55" placeholder="글쓴이" maxlength="100" required><?php echo $board['name']; ?></textarea>
                     </div>
                     <div class="wi_line"></div>
                     <div id="in_content">
-                        <textarea name="content" id="ucontent" placeholder="내용" required></textarea>
-                    </div>
-                    <div id="in_file">
-                        <input type="file" value="1" name="b_file" />
-                    </div>
-                    <div id="in_lock">
-                        <input type="checkbox" value="1" name="lockpost" /> 해당 글을 관리자 전용으로 전환합니다.
+                        <textarea name="content" id="ucontent" placeholder="내용" required><?php echo $board['content']; ?></textarea>
                     </div>
                     <div class="bt_se">
-                        <button type="submit" class="btn btn-success">등록하기</button>
+                        <button type="submit" class="btn btn-success">수정완료</button>
                     </div>
                 </form>
             </div>

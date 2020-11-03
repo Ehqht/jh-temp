@@ -146,9 +146,9 @@
             <th width="70">번호</th>
             <th width="500">제목</th>
             <th width="120">글쓴이</th>
-            <th width="80">첨부파일</th>
             <th width="100">작성일</th>
             <th width="100">조회수</th>
+            <th width="70" class="nn">첨부파일</th>
           </tr>
           </thead>
         <?php
@@ -186,16 +186,17 @@
           <td width="70"><?php echo $board['idx']; ?></td>
           <td width="500"><?php 
              $lockimg = "<img src='./img/lock.png' alt='lock' title='lock' with='20' height='20' />";
-             $fileimg = "<img src='./img/file.png' alt='file' title='file' with='20' height='20' />";
+             $fileimg = "<img src='./img/file.png' title =".$board['file']." alt='file' with='20' height='20' />";
             if($board['lock_post']=="1")
             { ?>
-              <a href='./ck_read.php?idx=<?php echo $board["idx"];?>'><?php echo $title, $lockimg;
+              <a href='./bbs/ck_read.php?idx=<?php echo $board["idx"];?>'><?php echo $title, $lockimg;
             }else{  ?>
-            <a href='./read.php?idx=<?php echo $board["idx"]; ?>'><?php echo $title; }?><span class="re_ct"></span></a></td>
+            <a href='./bbs/read.php?idx=<?php echo $board["idx"]; ?>'><?php echo $title; }?><span class="re_ct"></span></a></td>
           <td width="120"><?php echo $board['name']?></td>
-          <td width="80"> <a href="./upload/<?php echo $board['file']; ?>" type="text/html" download>  <?php if($board['file']!="") echo $fileimg ?></a></td>
+          
           <td width="100"><?php echo $board['date']?></td>
           <td width="100"><?php echo $board['hit']; ?></td>
+          <td width="70" class="nn"> <a href="./upload/<?php echo $board['file']; ?>" type="text/html" download>  <?php if($board['file']!="") echo $fileimg ?></a></td>
         </tr>
         </tbody>
         <?php } ?>

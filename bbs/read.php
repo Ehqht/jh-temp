@@ -139,33 +139,39 @@
           </ol>
         </div>
 
-        <div id="board_write">
-        <h5>-- 등록 --</h5>
-            <div id="write_area">
-                <form action="write_ok.php" method="post" enctype="multipart/form-data">
-                    <div id="in_title">
-                        <textarea name="title" id="utitle" rows="1" cols="55" placeholder="제목" maxlength="100" required></textarea>
-                    </div>
-                    <div class="wi_line"></div>
-                    <div id="in_name">
-                        <textarea name="name" id="uname" rows="1" cols="55" placeholder="글쓴이" maxlength="100" required></textarea>
-                    </div>
-                    <div class="wi_line"></div>
-                    <div id="in_content">
-                        <textarea name="content" id="ucontent" placeholder="내용" required></textarea>
-                    </div>
-                    <div id="in_file">
-                        <input type="file" value="1" name="b_file" />
-                    </div>
-                    <div id="in_lock">
-                        <input type="checkbox" value="1" name="lockpost" /> 해당 글을 관리자 전용으로 전환합니다.
-                    </div>
-                    <div class="bt_se">
-                        <button type="submit" class="btn btn-success">등록하기</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+		<?php
+		$bno = $_GET['idx']; /* bno함수에 idx값을 받아와 넣음*/
+		$hit = mysqli_fetch_array(mq("select * from board where idx ='".$bno."'"));
+		$hit = $hit['hit'] + 1;
+		$fet = mq("update board set hit = '".$hit."' where idx = '".$bno."'");
+		$sql = mq("select * from board where idx='".$bno."'"); /* 받아온 idx값을 선택 */
+		$board = $sql->fetch_array();
+	?>
+<!-- 글 불러오기 -->
+<div id="board_read">
+	<div id="board-title-bar" class="flex-box">
+		<h2><?php echo $board['title']; ?></h2>
+		<div id="user_info">
+			<?php echo $board['name']; ?> &nbsp;&nbsp;<?php echo $board['date']; ?> &nbsp;&nbsp;조회:<?php echo $board['hit']; ?>
+		</div>
+	</div>
+	<div class="my-2 pr-4 text-right">
+		파일 : <?php if ($board['file']!="") {?><a href="./upload/ <?php echo $board['file']; ?>" type="text/html" download><?php echo $board['file']; } else echo '없음'?></a>
+	</div>
+	<div id="bo_content">
+		<?php echo nl2br("$board[content]"); ?>
+	</div>
+	<div id="bo_line"></div>
+	<!-- 목록, 수정, 삭제 -->
+	<div id="bo_ser">
+		<ul>
+			<li><a href="../tech-data.php">[목록으로]</a></li>
+			<li><a href="modify.php?idx=<?php echo $board['idx']; ?>">[수정]</a></li>
+			<li><a href="delete.php?idx=<?php echo $board['idx']; ?>">[삭제]</a></li>
+		</ul>
+	</div>
+</div>
+
       </div>
     </div>
     <!-- /.row -->
