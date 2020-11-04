@@ -158,13 +158,12 @@
         <h3 class="sub-tit">
           오존산화기술(O3-OX) 공정도
         </h3>
-        <img src="img/오존산화기술 공정도.jpg" width=80%>
-       
+        <img class="img-fluid img-border" src="img/오존산화기술 공정도.jpg" width=80%>
         <div class="subtits row">
             <div class="w-47 px-3">
             <h3 class="sub-tit">
                 오존산화기술(O3-OX) 적용 사례
-            </h3>
+            
             <img class="img-fluid" src="img/O3-OX.JPG" alt="" width=60%>
         </div>
         <div class="w-47 px-3">
@@ -207,7 +206,12 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  <script type="text/javascript">
+    var img = document.getElementsByTagName("img");
+        for (var x = 0; x < img.length; x++) {
+          img.item(x).onclick=function() {window.open(this.src)}; 
+        }
+  </script>
   <script src="js/nav.js"></script>
 </body>
 
