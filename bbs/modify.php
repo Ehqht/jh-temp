@@ -126,7 +126,7 @@
       <div class="col-lg-2 mb-4">
         <a href="../contact.html" class="side-menu text-center">고객센터</a>
         <div class="list-group">
-          <a href="../tech-data.php" class="list-group-item">상담문의</a>
+          <a href="../contact.html" class="list-group-item">상담문의</a>
           <a href="../tech-data.php" class="list-group-item"><strong>기술자료</strong></a>
         </div>
       </div>
