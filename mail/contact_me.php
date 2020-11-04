@@ -34,8 +34,8 @@ try {
     $mail->SMTPAuth = true; // SMTP 인증을 사용함
     $mail->Port = 465; // email 보낼때 사용할 포트를 지정
     $mail->SMTPSecure = "ssl"; // SSL을 사용함
-    $mail->Username =  "juheong-1@hanmail.net";
-    $mail->Password = 'ab640210'; // 패스워드
+    $mail->Username =  "livia3609@gmail.com";
+    $mail->Password = 'EhqhtWkd!'; // 패스워드
     $mail->SetFrom('juheong-1@hanmail.net', '주흥환경 홈페이지'); // 보내는 사람 email 주소와 표시될 이름 (표시될 이름은 생략가능)
     $mail->AddAddress('juheong-1@hanmail.net');  // 받을 사람 email 주소와 표시될 이름 (표시될 이름은 생략가능)
     $mail->Subject = "홈페이지에 새로운 문의사항이 등록되었습니다. 제목:$title, 작성자: $name"; // 메일 제목

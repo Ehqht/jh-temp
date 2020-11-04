@@ -1,6 +1,10 @@
 $(function() {
-
+  var personal = document.getElementById('personal');
+  if ($(personal).prop("checked")==false){
+    alert('개인정보 취급방침에 동의하고 모든 내용을 작성해주세요.')
+  }
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
+
     preventSubmit: true,
     submitError: function($form, event, errors) {
       // additional error messages or events
